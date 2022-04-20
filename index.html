@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Tetris Words</title>
+    <title>Tetrordle</title>
     <style>
       body {
         background: #202028;
@@ -11,14 +11,23 @@
       }
       canvas {
         border: solid .2em #fff;
-        height: 90vh;
+        height: 60vh;
+      }
+      #controls {
+          font-size: 14pt;
+          margin-top: 50px;
       }
     </style>
 </head>
 <body>
-    <div id="score"></div>
-    <canvas id="tetris" width="240" height="400" />
+    <h3>Tetrordle</h3>
+    <div id="score">0</div>
+    <canvas id="tetris" width="240" height="400"></canvas>
+    <br />
+    <div id="controls">Controls:<br />Arrow keys to move, Q and W to rotate</div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="game.js"></script>
+
 </body>
 </html>
